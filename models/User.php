@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/db.php'; // Connexion à la BDD
-
+//Modèle de l'utilisateur'
 class User {
   private $db;
 

@@ -1,4 +1,5 @@
 <?php
+//Classe Database qui permet la connexion à la BDD sur toutes les pages
 class Database {
   private $host = "localhost";
   private $dbname = "facil_admin";

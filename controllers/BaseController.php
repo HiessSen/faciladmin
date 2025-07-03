@@ -1,4 +1,5 @@
 <?php
+//BaseController, qui contient tout le code commun à tous les controllers
 abstract class BaseController {
     protected $data = [];
 

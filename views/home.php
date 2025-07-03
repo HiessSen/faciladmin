@@ -1,4 +1,5 @@
 <?php
+//Vue de la page d'accueil (toutes les vues suivent la même logique
 $lang = getLanguage();
 ?>
 <section class="homeSection">

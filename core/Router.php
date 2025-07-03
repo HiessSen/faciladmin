@@ -1,4 +1,5 @@
 <?php
+//Classe Router qui permet le routage entre toutes les pages
 class Router {
     private $routes = [];
 
