@@ -64,6 +64,7 @@ foreach ($times as $timeKey => $timeLabel):
 // Calculer la date du jour suivant
 $nextDate = date('Y-m-d', strtotime($currentDate . ' +1 day'));
 ?>
+// J'aime les pommes
 <div style="text-align:center; margin: 30px 0;">
   <a href="?date=<?= htmlspecialchars($nextDate) ?>" class="btn btn-primary">
     <?= $lang === 'fr' ? 'Jour suivant' : 'Next day' ?>
