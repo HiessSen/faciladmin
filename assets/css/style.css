@@ -1,0 +1,295 @@
+/*______________________________________________________________________________*/
+/*Mise en page globale et style des eléments liés à la charte graphique*/
+/*______________________________________________________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+    color: #000091;
+}
+header, footer, article{
+    width: 100%;
+    background-color: #E8DDBE;
+}
+a{
+    color: #000091;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+}
+section h3{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+div.separateur{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #FF6600;
+}
+/*______________________________________________________________________________*/
+/*Style du header et du footer*/
+/*______________________________________________________________________________*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 1%;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+header img.logo{
+    width: 10%;
+}
+header nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    flex-grow: 0.8;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+header nav ul li{
+    display: flex;
+    flex-direction: column;
+}
+header nav ul li a{
+    padding: 5px;
+    border-bottom: 2px solid #FF6600;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #000091;
+}
+header nav ul li:hover a{
+    border: none;
+}
+
+li.menuParent{
+    position: relative;
+}
+ul.sousMenu{
+    display: none;
+}
+li.menuParent:hover ul.sousMenu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10; /* Assure que les sous-menus sont au-dessus du contenu */
+    width: max-content;
+}
+header nav ul li.menuParent ul.sousMenu li a {
+    font-size: 0.9em;
+    border: none;
+    text-transform: capitalize;
+}
+li.menuParent ul.sousMenu li:hover a{
+    border-bottom: 2px solid #FF6600;
+}
+
+main h2#titrePage{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 1%;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+main p#date{
+    margin: 0;
+    padding: 10px 1%;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FF6600;
+    background-color: #E8DDBE;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    height: min-content;
+    padding: 0;
+    list-style-type: none;
+}
+footer ul li{
+    width: 100%;
+    height: min-content;
+    margin: 20px 0;
+}
+footer ul li a {
+    padding: 5px 0;
+    border-bottom: 2px solid #FF6600;
+    text-decoration: none;
+    color: #000091;
+}
+footer ul li a:hover{
+    border: none;
+}
+footer p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+/*______________________________________________________________________________*/
+/*Style de la page d'accueil*/
+/*______________________________________________________________________________*/
+section.homeSection article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+section.homeSection article div.texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+section.homeSection article div.texte p{
+    font-size: 1.5em;
+}
+section.homeSection article img{
+    max-width: 20%;
+    object-fit : contain;
+}
+
+/*______________________________________________________________________________*/
+/*Style de la page Actualités*/
+/*______________________________________________________________________________*/
+section.todaySection{
+    justify-content: space-around;
+}
+section.todaySection aside{
+    width: 40%;
+}
+section.todaySection aside ul{
+    width: 100%;
+}
+section.todaySection aside ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #000000;
+}
+section.todaySection aside ul li:nth-child(odd){
+    border: 1px solid black;
+    background-color: #E8DDBE;
+}
+section.todaySection aside ul li:nth-child(even){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+section.todaySection aside ul li:last-child{
+    border-bottom: 1px solid black;
+}
+section.todaySection aside ul li:hover p{
+    text-decoration: underline;
+    text-decoration-color: #FF6600;
+}
+section.todaySection aside ul li span{
+    text-transform: uppercase;
+}
+section.todaySection article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 30%;
+    height: fit-content;
+    padding: 20px;
+}
+section.todaySection article div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 34%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 25px 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+section.todaySection article div p{
+    width: min-content;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-bottom: 1px solid #FF6600;
+}
+section.todaySection article div:hover p{
+    border: none;
+    font-size: 1.5em;
+}
+section.todaySection article div button{
+    border: none;
+    margin: 0;
+    padding: 10px;
+}
+section.todaySection article div button:hover{
+    padding: 0;
+}
+section.todaySection article div button img{
+    width: 100%;
+    height: auto;
+}
+
+/*______________________________________________________________________________*/
+/*Style de la page Profil*/
+/*______________________________________________________________________________*/
+div.activite{
+    width: 100%;
+    border-bottom: 1px solid #FF6600;
+}
+
+/*______________________________________________________________________________*/
+/*Style de la page Profil*/
+/*______________________________________________________________________________*/
+section.profileSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+}
+section.profileSection article{
+    width: 100%;
+    padding: 10px;
+}
+/*______________________________________________________________________________*/
+/*Style des pages Inscription et Connexion*/
+/*______________________________________________________________________________*/
